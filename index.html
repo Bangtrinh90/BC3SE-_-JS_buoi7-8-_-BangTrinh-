@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>baitap-ham-js</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="shortcut icon" href="./images/js_icon.png" type="image/x-icon" />
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <!-- Font -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Reset CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- My Css -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container py-5 px-3">
+      <div class="row">
+        <div class="col-3">
+          <div
+            class="nav flex-column nav-pills"
+            id="v-pills-tab"
+            role="tablist"
+            aria-orientation="vertical"
+          >
+            <button
+              class="nav-link active mb-3"
+              id="v-pills-bai-tab"
+              data-toggle="pill"
+              data-target="#v-pills-bai"
+              type="button"
+              role="tab"
+              aria-controls="v-pills-bai"
+              aria-selected="true"
+            >
+              <span class="icon">📒</span>Bài tập
+            </button>
+          </div>
+        </div>
+        <div class="col-9">
+          <div class="tab-content" id="v-pills-tabContent">
+            <div
+              class="tab-pane fade show active"
+              id="v-pills-bai1"
+              role="tabpanel"
+              aria-labelledby="v-pills-bai1-tab"
+            >
+              <h4 class="mb-3 text-warning">🏫 Yêu cầu</h4>
+              <div class="bd-callout mb-4 bg-white">
+                💡 Cho người dùng nhập vào số nguyên và lưu trữ trong mảng. Hãy
+                thực hiện theo từng yêu cầu bài như bên dưới.
+              </div>
+			  <div class="container" style="margin-bottom: 50px;">
+				<!-- Mảng ban đầu -->
+				<div class="form-group">
+					<p>Mảng</p>
+					<input class="form-control" mb-4 id="mangGT" type="number">
+					
+					<button class="button"
+					type="submit" mt-3 id="btnThemSo">Thêm số </button>
+	
+					<div class="form-control" mb-2 w-25 id="ketQuaMang">
+						<i class="fa-solid fa-hand-point-right icon-res"></i>
+					</div>
+				</div>
+              <!-- //Yêu cầu bài -->
+              <div class="container-card">
+			  <div id="accordion">
+				<!-- BT1 -->
+                <div class="card" w-25>
+                  <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                      <button
+                        class="btn btn-link collapsed"
+                        data-toggle="collapse"
+                        data-target="#collapseTwo"
+                        aria-expanded="false"
+                        aria-controls="collapseTwo"
+                      >
+                        Bài 1. Tính tổng số dương
+                      </button>
+                    </h5>
+                  </div>
+                  <div
+                    id="collapseTwo"
+                    class="collapse"
+                    aria-labelledby="headingTwo"
+                    data-parent="#accordion"
+                  >
+                    <div class="card-body">
+                      <button class="button" type="submit" id="btnKetQua1">
+                        Tính tổng
+                      </button>
+                      <div class="alert alert-success mt-2" role="alert">
+                        <i class="fa-solid fa-hand-point-right icon-res"></i>
+                        <span class="showScore mess" id="result1"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+				<!-- BT2 -->
+                <div class="card">
+					<div class="card-header" id="heading2">
+					  <h5 class="mb-0">
+						<button
+						  class="btn btn-link collapsed"
+						  data-toggle="collapse"
+						  data-target="#collapse2"
+						  aria-expanded="false"
+						  aria-controls="collapse2"
+						>
+						  Bài 2. Đếm số dương
+						</button>
+					  </h5>
+					</div>
+					<div
+					  id="collapse2"
+					  class="collapse"
+					  aria-labelledby="heading2"
+					  data-parent="#accordion"
+					>
+					  <div class="card-body">
+						<button class="button" type="submit" id="btnKetQua2">
+						  Đếm số
+						</button>
+						<div class="alert alert-success mt-2" role="alert">
+						  <i class="fa-solid fa-hand-point-right icon-res"></i>
+						  <span class="showScore mess" id="result2"></span>
+						</div>
+					  </div>
+					</div>
+				  </div>
+				
+				<!-- BT3 -->
+                <div class="card">
+					<div class="card-header" id="heading3">
+					  <h5 class="mb-0">
+						<button
+						  class="btn btn-link collapsed"
+						  data-toggle="collapse"
+						  data-target="#collapse3"
+						  aria-expanded="false"
+						  aria-controls="collapse3"
+						>
+						  Bài 3. Tìm số nhỏ nhất
+						</button>
+					  </h5>
+					</div>
+					<div
+					  id="collapse3"
+					  class="collapse"
+					  aria-labelledby="heading3"
+					  data-parent="#accordion"
+					>
+					  <div class="card-body">
+						<button class="button" type="submit" id="btnKetQua3">
+						  Tìm số nhỏ nhất
+						</button>
+						<div class="alert alert-success mt-2" role="alert">
+						  <i class="fa-solid fa-hand-point-right icon-res"></i>
+						  <span class="showScore mess" id="result3"></span>
+						</div>
+					  </div>
+					</div>
+				  </div>
+
+				<!-- BT4 -->
+                <div class="card">
+					<div class="card-header" id="heading4">
+					  <h5 class="mb-0">
+						<button
+						  class="btn btn-link collapsed"
+						  data-toggle="collapse"
+						  data-target="#collapse4"
+						  aria-expanded="false"
+						  aria-controls="collapse4"
+						>
+						  Bài 4. Tìm số dương nhỏ nhất
+						</button>
+					  </h5>
+					</div>
+					<div
+					  id="collapse4"
+					  class="collapse"
+					  aria-labelledby="heading4"
+					  data-parent="#accordion"
+					>
+					  <div class="card-body">
+						<button class="button" type="submit" id="btnKetQua4">
+						  Tìm số dương nhỏ nhất
+						</button>
+						<div class="alert alert-success mt-2" role="alert">
+						  <i class="fa-solid fa-hand-point-right icon-res"></i>
+						  <span class="showScore mess" id="result4"></span>
+						</div>
+					  </div>
+					</div>
+				  </div>
+				  
+				<!-- BT5 -->
+                <div class="card">
+					<div class="card-header" id="heading5">
+					  <h5 class="mb-0">
+						<button
+						  class="btn btn-link collapsed"
+						  data-toggle="collapse"
+						  data-target="#collapse5"
+						  aria-expanded="false"
+						  aria-controls="collapse5"
+						>
+						  Bài 5. Tìm số chẵn cuối cùng
+						</button>
+					  </h5>
+					</div>
+					<div
+					  id="collapse5"
+					  class="collapse"
+					  aria-labelledby="heading5"
+					  data-parent="#accordion"
+					>
+					  <div class="card-body">
+						<button class="button" type="submit" id="btnKetQua5">
+						  Tìm số
+						</button>
+						<div class="alert alert-success mt-2" role="alert">
+						  <i class="fa-solid fa-hand-point-right icon-res"></i>
+						  <span class="showScore mess" id="result5"></span>
+						</div>
+					  </div>
+					</div>
+				  </div>
+
+				<!-- BT6 -->
+                <div class="card">
+					<div class="card-header" id="heading6">
+					  <h5 class="mb-0">
+						<button
+						  class="btn btn-link collapsed"
+						  data-toggle="collapse"
+						  data-target="#collapse6"
+						  aria-expanded="false"
+						  aria-controls="collapse6"
+						>
+						  Bài 6. Đổi chỗ
+						</button>
+					  </h5>
+					</div>
+					<div
+					  id="collapse6"
+					  class="collapse"
+					  aria-labelledby="heading6"
+					  data-parent="#accordion"
+					>
+					  <div class="card-body">
+						<button class="button" type="submit" id="btnKetQua6">
+						  Đổi chỗ
+						</button>
+						<div class="alert alert-success mt-2" role="alert">
+						  <i class="fa-solid fa-hand-point-right icon-res"></i>
+						  <span class="showScore mess" id="result6"></span>
+						</div>
+					  </div>
+					</div>
+				  </div>
+
+				<!-- BT7 -->
+                <div class="card">
+					<div class="card-header" id="heading7">
+					  <h5 class="mb-0">
+						<button
+						  class="btn btn-link collapsed"
+						  data-toggle="collapse"
+						  data-target="#collapse7"
+						  aria-expanded="false"
+						  aria-controls="collapse7"
+						>
+						  Bài 7. Sắp xếp tăng dần
+						</button>
+					  </h5>
+					</div>
+					<div
+					  id="collapse7"
+					  class="collapse"
+					  aria-labelledby="heading7"
+					  data-parent="#accordion"
+					>
+					  <div class="card-body">
+						<button class="button" type="submit" id="btnKetQua7">
+						  Sắp xếp
+						</button>
+						<div class="alert alert-success mt-2" role="alert">
+						  <i class="fa-solid fa-hand-point-right icon-res"></i>
+						  <span class="showScore mess" id="result7"></span>
+						</div>
+					  </div>
+					</div>
+				  </div>
+
+				<!-- BT8 -->
+                <div class="card">
+					<div class="card-header" id="heading8">
+					  <h5 class="mb-0">
+						<button
+						  class="btn btn-link collapsed"
+						  data-toggle="collapse"
+						  data-target="#collapse8"
+						  aria-expanded="false"
+						  aria-controls="collapse8"
+						>
+						  Bài 8. Tìm số nguyên tố đầu tiên
+						</button>
+					  </h5>
+					</div>
+					<div
+					  id="collapse8"
+					  class="collapse"
+					  aria-labelledby="heading8"
+					  data-parent="#accordion"
+					>
+					  <div class="card-body">
+						<button class="button" type="submit" id="btnKetQua8">
+						  Tìm số nguyên tố
+						</button>
+						<div class="alert alert-success mt-2" role="alert">
+						  <i class="fa-solid fa-hand-point-right icon-res"></i>
+						  <span class="showScore mess" id="result8"></span>
+						</div>
+					  </div>
+					</div>
+				  </div>
+
+				<!-- BT9 -->
+                <div class="card">
+					<div class="card-header" id="heading9">
+					  <h5 class="mb-0">
+						<button
+						  class="btn btn-link collapsed"
+						  data-toggle="collapse"
+						  data-target="#collapse9"
+						  aria-expanded="false"
+						  aria-controls="collapse9"
+						>
+						  Bài 9. Đếm số nguyên
+						</button>
+					  </h5>
+					</div>
+					
+					<div
+					  id="collapse9"
+					  class="collapse"
+					  aria-labelledby="heading9"
+					  data-parent="#accordion"
+					>
+					  <div class="card-body">
+						
+						<input mb-4 id="mangGT2" type="number">
+
+						<button class="button" type="submit" id="btnThemSo2">
+							Thêm số
+						  </button>
+						
+						  <div class="alert alert-success mt-2 w-20" role="alert">
+							<i class="fa-solid fa-hand-point-right icon-res"></i>
+							<span class="showScore mess" id="showGT2"></span>
+						  </div>
+						<button class="button" type="submit" id="btnKetQua9">
+						  Đếm số nguyên
+						</button>
+						<div class="alert alert-success mt-2" role="alert">
+						  <i class="fa-solid fa-hand-point-right icon-res"></i>
+						  <span class="showScore mess" id="result9"></span>
+						</div>
+					  </div>
+					</div>
+				  </div>
+
+				<!-- BT10 -->
+                <div class="card">
+					<div class="card-header" id="heading10">
+					  <h5 class="mb-0">
+						<button
+						  class="btn btn-link collapsed"
+						  data-toggle="collapse"
+						  data-target="#collapse10"
+						  aria-expanded="false"
+						  aria-controls="collapse10"
+						>
+						  Bài 10. So sánh số lượng số âm và số dương
+						</button>
+					  </h5>
+					</div>
+					<div
+					  id="collapse10"
+					  class="collapse"
+					  aria-labelledby="heading10"
+					  data-parent="#accordion"
+					>
+					  <div class="card-body">
+						<button class="button" type="submit" id="btnKetQua10">
+						  So sánh
+						</button>
+						<div class="alert alert-success mt-2" role="alert">
+						  <i class="fa-solid fa-hand-point-right icon-res"></i>
+						  <span class="showScore mess" id="result10"></span>
+						</div>
+					  </div>
+					</div>
+				  </div>
+			 </div>
+		</div>
+	</div>
+</div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.29/dist/sweetalert2.all.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

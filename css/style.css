@@ -4,6 +4,11 @@ body {
 	font-weight: 400;
 	background-color: #edf2f9;
 }
+
+p {
+	margin-bottom: 0;
+}
+
 .nav-link {
 	border: none;
 	padding: 12px 16px;
@@ -36,12 +41,11 @@ button:focus {
 	color: #31344b;
 	font-size: 15px;
 	font-weight: 500;
-	padding: 15px;
+	padding: 0 15px;
 }
 .bd-callout {
 	padding: 1.25rem;
 	margin-top: 1.25rem;
-	margin-bottom: 1.25rem;
 	border-radius: 0.25rem;
 	border-left: 0.25rem solid #5bc0de !important;
 	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -148,4 +152,8 @@ input:focus {
 
 .container-card {
 	padding: 0;
+}
+
+.mang-fixed {
+	background: #f2f3f7;
 }
